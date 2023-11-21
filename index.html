@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caro's Portfolio Website</title>
+<!-- Rubik Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,600;0,700;1,500&family=Teko:wght@500&display=swap" rel="stylesheet">
+    <style>
+/* background image and font*/
+      body {
+        background-image: url("web_bkg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 100%;
+        color: #F2F2F2;
+        font-family: "Rubik", sans-serif;
+      }
+/* nav bar */
+      ul {
+        list-style-type: none;
+        margin: -8;
+        padding-left: 75px;
+        overflow: hidden;
+        background-color: rgba(157, 179, 227, 55%);
+      }
+      li {
+        float: left;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: #F2F2F2;
+        font-size: 25px;
+        font-weight: 500;
+        display: block;
+        padding: 20px;
+      }
+      .navbar a:hover {
+        background-color: rgba(151, 193, 120, 55%); 
+      }
+      .instalogo1 {
+        width: 31px;
+        float: right;
+        margin-top: -42px;
+        margin-right: 155px;
+      }
+      .emailicon1 {
+        width: 46px;
+        float: right;
+        margin-top: -50px;
+        margin-right: 89px;
+      }
+/* name title */
+      .nameintro {
+        font-size: 90px;
+        font-weight: 700;
+        background-color: rgba(199, 174, 224, 55%);
+        margin-top: 8px;
+        margin-left: -8px;
+        margin-right: -8px;
+        padding-left: 200px;
+        padding-top: 35px;
+        padding-bottom: 15px;
+      }
+      .namesubtitle {
+        font-size: 35px;
+        font-weight: 500;
+        margin-top: 0px;
+        padding-left: 4px;
+      }
+/* portfolio sections */
+      .personal {
+        font-size: 45px;
+        font-weight: 600;
+        border-radius: 15px;
+        width: 600px;
+        text-align: center;
+        background-color: rgba(151, 193, 120, 55%);
+        margin-left: 20px;
+        margin-right: 80px;
+        padding-top: 350px;
+        padding-bottom: 40px;
+      }
+      .course {
+        font-size: 45px;
+        font-weight: 600;
+        border-radius: 15px;
+        width: 600px;
+        text-align: center;
+        background-color: rgba(157, 179, 227, 55%);
+        margin-left: 30px;
+        margin-right: 80px;
+        padding-top: 350px;
+        padding-bottom: 40px;
+      }
+      /* 
+      Copied code from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns
+      Author: w3schools.com
+      Name: How to Create a Two Column Layout
+      Description: Creating a two column layout and clear the format after that section
+      Date retrieved: Friday November 17, 2023
+      */
+      /* Copied code starts */
+      .column {
+        float: left;
+        width: 40%;
+        padding: 5px;
+        margin-left: 65px;
+        margin-right: 30px;
+        margin-top: -30px;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      /* Copied code ends */
+/* images */
+      .niki1 {
+        width: 600px;
+        margin-top: -480px;
+        margin-left: 20px;
+        border-radius: 15px;
+      }
+      .magcov1 {
+        width: 600px;
+        margin-top: -480px;
+        margin-left: 30px;
+        border-radius: 15px;
+      }
+/* about title */
+      .abouttitle{
+        font-size: 90px;
+        font-weight: 700;
+        background-color: rgba(199, 174, 224, 55%);
+        margin-top: -260px;
+        margin-left: -8px;
+        margin-right: -8px;
+        padding-left: 200px;
+        padding-top: 35px;
+        padding-bottom: 8px;
+      }
+      .aboutsubtitle {
+        font-size: 35px;
+        font-weight: 500;
+        margin-top: 0px;
+        padding-left: 3px;
+      }
+/* about text */
+      .abouttext1 {
+        font-size: 25px;
+        font-weight: 500;
+        background-color: rgba(199, 174, 224, 55%);
+        margin: -61px -8px 0px -8px;
+        padding-left: 95px;
+      }
+      .abouttext2 {
+        font-size: 25px;
+        font-weight: 500;
+        background-color: rgba(199, 174, 224, 55%);
+        margin: 0px -8px 0px -8px;
+        padding-top: 25px;
+        padding-left: 95px;
+      }
+      .abouttext3 {
+        font-size: 25px;
+        font-weight: 500;
+        background-color: rgba(199, 174, 224, 55%);
+        margin: 0px -8px 0px -8px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        padding-left: 95px;
+      }
+/*socials and email  text */
+      .socials {
+        font-size: 25px;
+        font-weight: 500;
+        background-color: rgba(199, 174, 224, 55%);
+        margin: -16px -8px 0px -8px;
+        padding-top: 30px;
+        padding-left: 95px;
+      }
+      .insta {
+        font-size: 25px;
+        font-weight: 500;
+        background-color: rgba(199, 174, 224, 55%);
+        margin: 0px -8px 0px -8px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-left: 95px;
+      }
+      .instalink {
+        text-decoration: none;
+        color: #F2F2F2;
+      }
+      .instalink:hover {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgba(151, 193, 120, 55%);
+      }
+      .email {
+        font-size: 25px;
+        font-weight: 500;
+        margin: -109px 0px 50px 0px;
+        padding-top: 30px;
+        padding-left: 280px;
+      }
+      .sendemail {
+        text-decoration: none;
+        color: #F2F2F2;
+      }
+      .sendemail:hover {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgba(151, 193, 120, 55%);
+      }
+/* personal projects title*/
+      .persproj {
+        font-size: 60px;
+        font-weight: 700;
+        text-align: center;
+        background-color: rgba(151, 193, 120, 55%);
+        margin: 130px -8px 0px -8px;
+        padding: 25px 0px 25px 0px;
+      }
+/* pers.proj blurb */
+      .blurb1 {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 0.25;
+        text-align: center;
+        background-color: rgba(199, 174, 224, 55%);
+        margin: 0px -8px 0px -8px;
+        padding: 25px 0px 25px 0px;
+      }
+/* pers.proj images */
+      .ning2 {
+        width: 655px;
+        padding: 80px 0px 0px 90px;
+      }
+      .jay {
+        width: 655px;
+        padding: 80px 0px 0px 2px;
+      }
+      .niki2 {
+        width: 655px;
+        padding-left: 90px;
+        padding-bottom: 15px;
+      }
+      .chaewon {
+        width: 655px;
+        padding-left: 2px; 
+      }
+      .jksh {
+        width: 655px;
+        padding-left: 90px;
+      }
+      .theo {
+        width: 655px;
+        padding-left: 2px;
+      }
+      .gbda {
+        width: 655px;
+        padding-left: 90px;
+      }
+      .tampc {
+        width: 655px;
+        padding-left: 2px;
+      }
+      .soul1 {
+        width: 1315px;
+        padding-left: 90px;
+      }
+      .minji {
+        width: 655px;
+        padding-left: 90px;
+        padding-top: 5px;
+      }
+      .soul2 {
+        width: 655px;
+        padding-left: 2px;
+      }
+      .icespice {
+        width: 655px;
+        padding: 0px 0px 35px 90px;
+      }
+      .yunjin {
+        width: 655px;
+        padding-left: 2px;
+      }
+      .rm {
+        width: 655px;
+        padding-left: 90px;
+      }
+      .liz {
+        width: 655px;
+        padding-left: 2px;
+      }
+      .couras {
+        font-size: 60px;
+        font-weight: 700;
+        text-align: center;
+        background-color: rgba(157, 179, 227, 55%);
+        margin: 75px -8px 0px -8px;
+        padding: 25px 0px 25px 0px;
+      }
+      .blurb2 {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 0.25;
+        text-align: center;
+        background-color: rgba(199, 174, 224, 55%);
+        margin: 0px -8px 0px -8px;
+        padding: 25px 0px 25px 0px;
+      }
+      .daypost {
+        width: 655px;
+        padding: 80px 0px 0px 90px;
+      }
+      .nightpost {
+        width: 655px;
+        padding: 80px 0px 0px 2px;
+      }
+      .magcover {
+        width: 655px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+        background-color: rgba(157, 179, 227, 55%);
+        padding: 30px;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+<!--home page-->
+    <div class="navbar">
+      <ul>
+        <li><a href="#section1">home</a></li>
+        <li><a href="#section2">about</a></li>
+        <li><a href="#section3">personal projects</a></li>
+        <li><a href="#section4">course assignments</a></li>
+      </ul>
+    </div>
+<!-- Instagram logo source: https://seeklogo.com/free-vector-logos/instagram -->
+    <a href="https://www.instagram.com/cigraphicss/" target="_blank"><img class="instalogo1" src="instalogo.png" alt="Instagram Logo"></a>
+<!-- Instagram logo source: https://www.veryicon.com/icons/miscellaneous/esgcc-basic-icon-library/mail-355.html -->
+    <a href="mailto:cibasurt@uwaterloo.ca"><img class="emailicon1" src="emailicon.png" alt="Email Icon"></a>
+    <div id="section1">
+      <h1 class="nameintro">
+        hi, i'm caro
+        <div>
+          <p class="namesubtitle"><i>a graphic designer</i></p>
+        </div>
+      </h1>
+      <div class="row">
+        <div class="column">
+          <h2 class="personal">personal projects</h2>
+          <a href="#personalprojects"><img class="niki1" src="niki_cropped1.png" alt="NIKI of ENHYPEN Graphic Design"></a>
+        </div>
+        <div class="column">
+          <h2 class="course">course assignments</h2>
+          <a href="#personalprojects"><img class="magcov1" src="magazine_cover_cropped.png" alt="Magazine Cover Graphic Design"></a>
+        </div>
+      </div>
+    </div>
+<!-- about page -->  
+    <div id="section2">
+      <h1 class="abouttitle">
+        about
+        <div>
+          <p class="aboutsubtitle"><i>the designer</i></p>
+        </div>
+      </h1>
+      <div>
+        <p class="abouttext1">I am an aspiring graphic designer who is currently attending the University of Waterloo's GBDA program.
+        <div class="abouttext2">Often, I will create designs for fun surrounding my interests or to just get my ideas on a screen.</div>
+        <div class="abouttext3">GBDA offers an exciting merge between design and business that has given me opportunities to create<div>
+          </div>new things, which you will find in this portfolio!</div></p></div>
+      <div><p class="socials">Catch me on Instagram or via Email</p>
+    </div>
+      <div>
+        <p class="insta"><a class="instalink" href="https://www.instagram.com/cigraphicss/" target="_blank">@cigraphicss</a></p> 
+        <p class="email"><a class="sendemail" href="mailto:cibasurt@uwaterloo.ca">cibasurt@uwaterloo.ca</a></p>
+      </div>
+    </div>
+<!-- personal projects page -->
+  <div id="section3">
+    <h1 class="persproj">personal projects</h1>
+    <div class="blurb1"><p>often inspired by a favourite musical artist or by a cool style seen online, I create these<div>
+      small personal projects leisurely to improve my skill and enhance the scope of my work.</div></p></div>
+  <tr>
+    <td><img class="ning2" src="ningning.png" alt="NINGNING of aespa Graphic Design"></td>
+    <td><img class="jay" src="jay.jpg" alt="JAY of ENHYPEN Graphic Design"></td>
+  </tr>
+  <tr>
+    <td><img class="niki2" src="niki.png" alt="NIKI of ENHYPEN Graphic Design"> </td>
+    <td><img class="chaewon" src="chaewon.png" alt="CHAEWON of LE SSERAFIM Graphic Design"></td>
+  </tr>
+  <tr>
+    <td><img class="jksh" src="jakehoon.png" alt="JAKE & SUNGHOON of ENHYPEN Graphic Design"></td>
+    <td><img class="theo" src="theo.png" alt="THEO of P1HARMONY Graphic Design"></td>
+  </tr>
+  <tr>
+    <td><img class="gbda" src="gbda_sticker.png" alt="GBDA Program Sticker Design"></td>
+    <td><img class="tampc" src="tam photocard post.png" alt="Tamara Birthday Photocard Design"></td>
+  </tr>
+  <tr>
+    <td><img class="soul1" src="soul2.png" alt="SOUL of P1HARMONY Graphic Design"></td>
+  </tr>
+  <tr>
+    <td><img class="minji" src="minji.png" alt="MINJI of NewJeans Graphic Design"></td>
+    <td><img class="soul2" src="soul.jpg" alt="SOUL of P1HARMONY Graphic Design"></td>
+  </tr>
+  <tr>
+    <td><img class="icespice" src="ice spice.jpg" alt="Ice Spice"></td>
+    <td><img class="yunjin" src="yunjin.jpg" alt="YUNJIN of LE SSERAFIM"></td>
+  </tr>
+  <tr>
+    <td><img class="rm" src="namjoon.jpg" alt="RM of BTS Graphic Design"></td>
+    <td><img class="liz" src="liz.jpg" alt="LIZ of IVE Graphic Design"></td>
+  </tr>
+  </div>
+<!-- course assignments page -->
+    <div id="section4">
+      <h1 class="couras">course assignments</h1>
+    <div class="blurb2"><p>here, you will find designs i've created for certain classes. these are<div>
+      the projects I had the most fun designing and am the most proud of.</div></p></div>
+<tr>
+  <td><img class="daypost" src="day_small.png" alt="Poster of Local Cafe with Phrase Day and Night"></td>
+  <td><img class="nightpost" src="night_small copy.png" alt="Poster of Local Cafe with Phrase Day and Night"></td>
+</tr>
+<tr>
+  <td><img class="magcover" src="magazine cover_small.png" alt="Cover of Personal Magazine Design"></td>
+</tr>
+    </div>
+  </body>
+</html>
